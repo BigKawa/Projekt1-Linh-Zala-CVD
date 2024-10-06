@@ -65,3 +65,14 @@ def map_age_to_range(age_category):
                   13: '80 or older'}
     return age_ranges.get(age_category, 'Unknown')
 
+# mapping string with the amount of annual household income to category
+def map_amount_to_cat(income_cat):
+    income_ranges = {1: '<$10k',
+                     2: '$10k-$15k',
+                     3: '$15k-$20k',
+                     4: '$20k-$25k',
+                     5: '$25k-$35k',
+                     6: '$35k-$50k',
+                     7: '$50k-$75k',
+                     8: '$75k+'}
+    return income_ranges.get(income_cat, 'Unknown')
